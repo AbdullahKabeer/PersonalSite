@@ -301,7 +301,7 @@ const Projects = () => {
                 transition={{ delay: 0.4 }}
               >
                 <a
-                  href="https://uvset.com"
+                  href="https://uvsetinc.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full font-sans font-semibold text-sm hover:bg-foreground/90 hover:scale-105 transition-all duration-300 group shadow-md"
@@ -367,7 +367,7 @@ const Projects = () => {
                 className="mt-10"
               >
                 <a 
-                  href="https://github.com/AbdullahKabeer/" 
+                  href="https://github.com/AbdullahKabeer/trading-infra" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full font-sans font-semibold text-sm transition-all duration-300 group border border-white/10"
@@ -463,13 +463,31 @@ const Projects = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="flex flex-wrap gap-3"
+                className="flex flex-wrap gap-3 mb-8"
               >
                 {['Python', 'Streamlit', 'yfinance', 'Black-Scholes', 'BAW Model'].map(tag => (
                   <span key={tag} className="px-4 py-2 rounded-full border border-white/20 text-white/80 text-xs font-mono uppercase tracking-wider">
                     {tag}
                   </span>
                 ))}
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 }}
+              >
+                <a 
+                  href="https://github.com/AbdullahKabeer/spus-options-hedging" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full font-sans font-semibold text-sm transition-all duration-300 group border border-white/10"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  View Source
+                  <ExternalLink className="w-3 h-3 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </a>
               </motion.div>
             </div>
           </div>
