@@ -131,7 +131,7 @@ const Hero = () => {
             Hardware patent inventor turned quantitative builder.
           </p>
           <p className="font-display text-xl md:text-2xl text-foreground/60 leading-snug font-medium mt-2">
-            CTO of UVSET, named on three US patents.
+            Named on three US patents.
           </p>
           <p className="font-display text-xl md:text-2xl text-foreground/40 leading-snug font-medium mt-2">
             Currently scoping next hardware venture in consumer product space.
